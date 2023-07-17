@@ -1,0 +1,2 @@
+// A script hat list all databease in MongoDB
+show db
