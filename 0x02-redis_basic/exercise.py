@@ -71,7 +71,7 @@ class Cache:
 
     @count_calls
     @call_history
-    def store(self, data: Any) -> str:
+    def store(self, data: Union[str, bytes, int, float]) -> str:
         """ store data in the cache"""
         rand = str(uuid.uuid4())
         self._redis.set(rand, data)
